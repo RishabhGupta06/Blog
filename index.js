@@ -6,7 +6,11 @@ const app = express();
 const port = 8000;
 
 
-app.set('view engine',ejs);
+app.set('view engine',"ejs");
 app.set('views',path.resolve("./views"));
+
+app.get('/',(req,res)=>{
+    res.render('home');
+})
 
 app.listen(port,()=>('server is running at the port'));
