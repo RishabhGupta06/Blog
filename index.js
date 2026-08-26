@@ -17,4 +17,4 @@ app.get('/',(req,res)=>{
 
 app.use('/user',userRouter);
 
-app.listen(port,()=>('server is running at the port'));
+app.listen(port,()=> console.log('server is running at the port'));
